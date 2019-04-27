@@ -3,6 +3,9 @@ package com.ayushgupta2959.supernote;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -12,6 +15,7 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.io.ByteArrayOutputStream;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -21,6 +25,8 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import static com.ayushgupta2959.supernote.R.drawable.ic_menu_add;
 
 public class MainActivity extends AppCompatActivity {
     public static final int ADD_NOTE_REQUEST = 1;
@@ -82,8 +88,12 @@ public class MainActivity extends AppCompatActivity {
             String title = data.getStringExtra(AddNoteActivity.EXTRA_TITLE);
             String description = data.getStringExtra(AddNoteActivity.EXTRA_DESCRIPTION);
             int priority = data.getIntExtra(AddNoteActivity.EXTRA_PRIORITY,1);
-
-            Note note = new Note(title,description,priority);
+            //Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.ic_menu_add);
+            //ByteArrayOutputStream bStream = new ByteArrayOutputStream();
+            //image.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+            //byte[] defaultImage = bStream.toByteArray();
+            byte[] byteArray = (byte[]) data.getByteArrayExtra(AddNoteActivity.EXTRA_IMAGE);
+            Note note = new Note(title,description,priority,byteArray);
             noteViewModel.insert(note);
 
             Toast.makeText(this, "Note saved", Toast.LENGTH_SHORT).show();

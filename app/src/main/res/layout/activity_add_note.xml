@@ -32,7 +32,16 @@
     <NumberPicker
         android:id="@+id/number_picker_priority"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="49dp">
 
     </NumberPicker>
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="162dp"
+
+        android:translationX="130dp"
+        android:translationY="250dp"
+        tools:srcCompat="@android:drawable/ic_menu_add" />
+
 </LinearLayout>

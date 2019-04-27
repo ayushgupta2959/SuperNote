@@ -19,9 +19,9 @@ public class Note {
     private int priority;
 
     @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
-    private Bitmap image;
+    private byte[] image;
 
-    public Note(String title, String description, int priority,Bitmap image) {
+    public Note(String title, String description, int priority,byte[] image) {
         this.title = title;
         this.description = description;
         this.priority = priority;
@@ -48,7 +48,7 @@ public class Note {
         return priority;
     }
 
-    public Bitmap getImage() {
+    public byte[] getImage() {
         return image;
     }
 }

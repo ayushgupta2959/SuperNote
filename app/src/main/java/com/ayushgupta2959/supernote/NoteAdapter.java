@@ -1,6 +1,7 @@
 package com.ayushgupta2959.supernote;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,13 +32,12 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         holder.textViewTitle.setText(currentnote.getTitle());
         holder.textViewDescription.setText(currentnote.getDescription());
         holder.textViewPriority.setText(String.valueOf(currentnote.getPriority()));
-        Bitmap image = currentnote.getImage();
-        if(image==null){
-            holder.imageView.setVisibility(View.INVISIBLE);
+        byte[] byteArray = currentnote.getImage();
+        if(byteArray==null){
+            return;
         }
-        else{
-            holder.imageView.setImageBitmap(currentnote.getImage());
-        }
+        Bitmap image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+        holder.imageView.setImageBitmap(image);
     }
 
     @Override

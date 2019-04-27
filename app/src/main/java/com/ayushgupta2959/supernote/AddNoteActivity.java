@@ -1,26 +1,34 @@
 package com.ayushgupta2959.supernote;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.ByteArrayOutputStream;
+
 public class AddNoteActivity extends AppCompatActivity {
     public static final String EXTRA_TITLE =
-            "com.example.architecturalcomponents.EXTRA_TITLE";
+            "com.ayushgupta2959.supernote.EXTRA_TITLE";
     public static final String EXTRA_DESCRIPTION =
-            "com.example.architecturalcomponents.EXTRA_DESCRIPTION";
+            "com.ayushgupta2959.supernote.EXTRA_DESCRIPTION";
     public static final String EXTRA_PRIORITY =
-            "com.example.architecturalcomponents.EXTRA_PRIORITY";
+            "com.ayushgupta2959.supernote.EXTRA_PRIORITY";
+    public static final String EXTRA_IMAGE =
+            "com.ayushgupta2959.supernote.EXTRA_IMAGE";
 
     private EditText editTextTitle,editTextDescription;
     private NumberPicker numberPickerPriority;
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,17 +37,29 @@ public class AddNoteActivity extends AppCompatActivity {
         editTextDescription = findViewById(R.id.edit_text_description);
         editTextTitle = findViewById(R.id.edit_text_title);
         numberPickerPriority = findViewById(R.id.number_picker_priority);
+        imageView = findViewById(R.id.imageView);
 
         numberPickerPriority.setMinValue(1);
         numberPickerPriority.setMaxValue(10);
 
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_launcher_background);
         setTitle("Add Note");
     }
     private void saveNote(){
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
         int priority = numberPickerPriority.getValue();
+        byte[] byteArray;
+        if(imageView.getDrawable()==null){
+            byteArray = null;
+        }
+        else{
+            BitmapDrawable drawable = (BitmapDrawable) imageView.getDrawable();
+            Bitmap image = drawable.getBitmap();
+            ByteArrayOutputStream bStream = new ByteArrayOutputStream();
+            image.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+            byteArray = bStream.toByteArray();
+        }
 
         if(title.trim().isEmpty()||description.trim().isEmpty()){
             Toast.makeText(this, "Please insert and description", Toast.LENGTH_SHORT).show();
@@ -50,6 +70,7 @@ public class AddNoteActivity extends AppCompatActivity {
         data.putExtra(EXTRA_TITLE,title);
         data.putExtra(EXTRA_DESCRIPTION,description);
         data.putExtra(EXTRA_PRIORITY,priority);
+        data.putExtra(EXTRA_IMAGE,byteArray);
 
         setResult(RESULT_OK,data);
         finish();
