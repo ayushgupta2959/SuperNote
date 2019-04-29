@@ -37,6 +37,7 @@
     </NumberPicker>
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="134dp"
         android:layout_height="162dp"
 

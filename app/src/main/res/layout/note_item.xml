@@ -41,11 +41,11 @@
             android:text="Description"/>
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/addImageView"
             android:layout_width="108dp"
             android:layout_height="101dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="175dp" />
+            android:layout_marginTop="95dp" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
