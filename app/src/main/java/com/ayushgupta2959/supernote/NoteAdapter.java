@@ -34,6 +34,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         holder.textViewPriority.setText(String.valueOf(currentnote.getPriority()));
         byte[] byteArray = currentnote.getImage();
         if(byteArray==null){
+            holder.imageView.setVisibility(View.GONE);
             return;
         }
         Bitmap image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);

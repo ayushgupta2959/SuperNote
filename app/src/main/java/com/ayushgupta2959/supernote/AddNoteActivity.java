@@ -42,7 +42,7 @@ public class AddNoteActivity extends AppCompatActivity {
         numberPickerPriority.setMinValue(1);
         numberPickerPriority.setMaxValue(10);
 
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_launcher_background);
+        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_launcher_background);
         setTitle("Add Note");
     }
     private void saveNote(){
@@ -53,6 +53,7 @@ public class AddNoteActivity extends AppCompatActivity {
         if(imageView.getDrawable()==null){
             byteArray = null;
         }
+
         else{
             BitmapDrawable drawable = (BitmapDrawable) imageView.getDrawable();
             Bitmap image = drawable.getBitmap();
@@ -71,7 +72,6 @@ public class AddNoteActivity extends AppCompatActivity {
         data.putExtra(EXTRA_DESCRIPTION,description);
         data.putExtra(EXTRA_PRIORITY,priority);
         data.putExtra(EXTRA_IMAGE,byteArray);
-
         setResult(RESULT_OK,data);
         finish();
 
