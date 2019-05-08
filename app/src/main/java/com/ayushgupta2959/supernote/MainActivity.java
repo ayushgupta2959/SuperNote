@@ -3,9 +3,6 @@ package com.ayushgupta2959.supernote;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,39 +11,38 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.io.ByteArrayOutputStream;
 import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import static com.ayushgupta2959.supernote.R.drawable.ic_menu_add;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
     public static final int ADD_NOTE_REQUEST = 1;
+    public static final int EDIT_NOTE_REQUEST = 2;
     private NoteViewModel noteViewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonAddNote = findViewById(R.id.button_add_note);
+        FloatingActionButton buttonAddNote = findViewById(R.id.button_add_note);
         buttonAddNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,AddNoteActivity.class);
+                Intent intent = new Intent(MainActivity.this, AddEditNoteActivity.class);
                 startActivityForResult(intent,ADD_NOTE_REQUEST);
             }
         });
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         recyclerView.setHasFixedSize(true);
 
         final NoteAdapter adapter = new NoteAdapter();
@@ -76,7 +72,13 @@ public class MainActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new NoteAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Note note) {
-                Intent intent = new Intent( );
+                Intent intent = new Intent(MainActivity.this, AddEditNoteActivity.class);
+                intent.putExtra(AddEditNoteActivity.EXTRA_ID,note.getId());
+                intent.putExtra(AddEditNoteActivity.EXTRA_TITLE,note.getTitle());
+                intent.putExtra(AddEditNoteActivity.EXTRA_DESCRIPTION,note.getDescription());
+                intent.putExtra(AddEditNoteActivity.EXTRA_PRIORITY,note.getPriority());
+                intent.putExtra(AddEditNoteActivity.EXTRA_IMAGE,note.getImage());
+                startActivityForResult(intent,EDIT_NOTE_REQUEST);
             }
         });
     }
@@ -85,18 +87,36 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==ADD_NOTE_REQUEST && resultCode==RESULT_OK){
-            String title = data.getStringExtra(AddNoteActivity.EXTRA_TITLE);
-            String description = data.getStringExtra(AddNoteActivity.EXTRA_DESCRIPTION);
-            int priority = data.getIntExtra(AddNoteActivity.EXTRA_PRIORITY,1);
+            String title = data.getStringExtra(AddEditNoteActivity.EXTRA_TITLE);
+            String description = data.getStringExtra(AddEditNoteActivity.EXTRA_DESCRIPTION);
+            int priority = data.getIntExtra(AddEditNoteActivity.EXTRA_PRIORITY,1);
             //Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.ic_menu_add);
             //ByteArrayOutputStream bStream = new ByteArrayOutputStream();
             //image.compress(Bitmap.CompressFormat.PNG, 100, bStream);
             //byte[] defaultImage = bStream.toByteArray();
-            byte[] byteArray = (byte[]) data.getByteArrayExtra(AddNoteActivity.EXTRA_IMAGE);
+            byte[] byteArray = (byte[]) data.getByteArrayExtra(AddEditNoteActivity.EXTRA_IMAGE);
             Note note = new Note(title,description,priority,byteArray);
             noteViewModel.insert(note);
 
             Toast.makeText(this, "Note saved", Toast.LENGTH_SHORT).show();
+        }
+        else if(requestCode==ADD_NOTE_REQUEST && resultCode==RESULT_OK){
+            int id = data.getIntExtra(AddEditNoteActivity.EXTRA_ID,-1);
+            if(id==-1){
+                Toast.makeText(MainActivity.this, "Note can't be upadted", Toast.LENGTH_SHORT).show();
+            }
+            String title = data.getStringExtra(AddEditNoteActivity.EXTRA_TITLE);
+            String description = data.getStringExtra(AddEditNoteActivity.EXTRA_DESCRIPTION);
+            int priority = data.getIntExtra(AddEditNoteActivity.EXTRA_PRIORITY,1);
+            //Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.ic_menu_add);
+            //ByteArrayOutputStream bStream = new ByteArrayOutputStream();
+            //image.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+            //byte[] defaultImage = bStream.toByteArray();
+            byte[] byteArray = (byte[]) data.getByteArrayExtra(AddEditNoteActivity.EXTRA_IMAGE);
+            Note note = new Note(title,description,priority,byteArray);
+            note.setId(id);
+            noteViewModel.update(note);
+            Toast.makeText(this, "Note updated", Toast.LENGTH_SHORT).show();
         }
         else{
             Toast.makeText(this, "Note not saved", Toast.LENGTH_SHORT).show();
