@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/save_note"
-        android:icon="@drawable/ic_save"
-        android:title="Save"
+        android:id="@+id/delete_note"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Delete"
         app:showAsAction="ifRoom"></item>
 </menu>

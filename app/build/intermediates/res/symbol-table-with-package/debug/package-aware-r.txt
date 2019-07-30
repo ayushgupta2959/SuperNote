@@ -631,6 +631,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1012,6 +1013,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_save
+drawable image_background
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1087,6 +1089,7 @@ id customPanel
 id decor_content_parent
 id default_activity_button
 id delete_all_notes
+id delete_note
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1162,9 +1165,9 @@ id recycler_view
 id right
 id right_icon
 id right_side
+id save
 id save_image_matrix
 id save_non_transition_alpha
-id save_note
 id save_scale_type
 id screen
 id scroll
@@ -1321,6 +1324,7 @@ layout support_simple_spinner_dropdown_item
 menu add_note_menu
 menu main_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string abc_action_bar_home_description
 string abc_action_bar_up_description

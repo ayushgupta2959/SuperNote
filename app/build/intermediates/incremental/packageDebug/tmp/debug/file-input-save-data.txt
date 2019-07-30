@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Wed May 08 16:26:24 IST 2019
+#Tue Jul 30 18:55:27 IST 2019
 0.baseType=DIRECTORY
-0.base=D\:\\Android\\SuperNote\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.base=C\:\\Users\\shiv\\Downloads\\SuperNote-master-20190730T123856Z-001\\SuperNote-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 0.path=classes.dex
 0.set=DEX
 count=1

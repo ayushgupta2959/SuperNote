@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android\\SuperNote\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\shiv\\Downloads\\SuperNote-master-20190730T123856Z-001\\SuperNote-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shiv\\.gradle\\caches\\transforms-2\\files-2.1\\42fe8bb5735a37c20edb690e7d6dca50\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\shiv\\.gradle\\caches\\transforms-2\\files-2.1\\a0555ad8ecdbb45bbb0da21be9a50a4c\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\shiv\\.gradle\\caches\\transforms-2\\files-2.1\\75ac49d221c983787eb6da1b39353b73\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\shiv\\.gradle\\caches\\transforms-2\\files-2.1\\3dfb2823b4048d29b495d9d64ee95187\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

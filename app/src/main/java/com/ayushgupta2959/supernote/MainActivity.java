@@ -1,31 +1,30 @@
 package com.ayushgupta2959.supernote;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
-import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.ItemTouchHelper;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     public static final int ADD_NOTE_REQUEST = 1;
     public static final int EDIT_NOTE_REQUEST = 2;
+    public static final int DELETE_NOTE = 3;
     private NoteViewModel noteViewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Note saved", Toast.LENGTH_SHORT).show();
         }
-        else if(requestCode==ADD_NOTE_REQUEST && resultCode==RESULT_OK){
+        else if(requestCode==EDIT_NOTE_REQUEST && resultCode==RESULT_OK){
             int id = data.getIntExtra(AddEditNoteActivity.EXTRA_ID,-1);
             if(id==-1){
                 Toast.makeText(MainActivity.this, "Note can't be upadted", Toast.LENGTH_SHORT).show();
@@ -117,6 +116,24 @@ public class MainActivity extends AppCompatActivity {
             note.setId(id);
             noteViewModel.update(note);
             Toast.makeText(this, "Note updated", Toast.LENGTH_SHORT).show();
+        }
+        else if(requestCode==EDIT_NOTE_REQUEST && resultCode==DELETE_NOTE){
+            int id = data.getIntExtra(AddEditNoteActivity.EXTRA_ID,-1);
+            if(id==-1){
+                Toast.makeText(MainActivity.this, "Note can't be upadted", Toast.LENGTH_SHORT).show();
+            }
+            String title = data.getStringExtra(AddEditNoteActivity.EXTRA_TITLE);
+            String description = data.getStringExtra(AddEditNoteActivity.EXTRA_DESCRIPTION);
+            int priority = data.getIntExtra(AddEditNoteActivity.EXTRA_PRIORITY,1);
+            //Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.ic_menu_add);
+            //ByteArrayOutputStream bStream = new ByteArrayOutputStream();
+            //image.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+            //byte[] defaultImage = bStream.toByteArray();
+            byte[] byteArray = (byte[]) data.getByteArrayExtra(AddEditNoteActivity.EXTRA_IMAGE);
+            Note note = new Note(title,description,priority,byteArray);
+            note.setId(id);
+            noteViewModel.delete(note);
+            Toast.makeText(this, "Note deleted", Toast.LENGTH_SHORT).show();
         }
         else{
             Toast.makeText(this, "Note not saved", Toast.LENGTH_SHORT).show();

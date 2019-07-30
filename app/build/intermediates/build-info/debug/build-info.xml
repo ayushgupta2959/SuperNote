@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.4.0"
-    timestamp="1557286443399"
+    timestamp="1557477544694"
     token="-5241892905455496869"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,13 +29,13 @@
 
     <build
         build-mode="FULL"
-        timestamp="1557285865501"
+        timestamp="1557477464040"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\shubh\Desktop\SuperNote-master\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="C:\Users\shubh\Desktop\SuperNote-master\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\shubh\Desktop\SuperNote-master\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\shubh\Desktop\SuperNote-master\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\shubh\Desktop\SuperNote-master\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -73,7 +73,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1557286443399"
+        timestamp="1557477544694"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\shubh\Desktop\SuperNote-master\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"

@@ -1,4 +1,4 @@
-#Wed May 08 16:26:24 IST 2019
-base.0=D\:\\Android\\SuperNote\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Tue Jul 30 18:55:27 IST 2019
+base.0=C\:\\Users\\shiv\\Downloads\\SuperNote-master-20190730T123856Z-001\\SuperNote-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex

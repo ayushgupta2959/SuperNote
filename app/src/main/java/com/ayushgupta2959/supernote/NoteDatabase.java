@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.AsyncTask;
 
 import androidx.annotation.NonNull;
@@ -51,12 +52,11 @@ public abstract class NoteDatabase extends RoomDatabase {
         protected Void doInBackground(Void... voids){
             BitmapDrawable drawable = (BitmapDrawable) myApplicationContext.getResources().getDrawable(R.drawable.b);
             Bitmap image = drawable.getBitmap();
-            //ByteArrayOutputStream bStream = new ByteArrayOutputStream();
-            //image.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+            ByteArrayOutputStream bStream = new ByteArrayOutputStream();
+            image.compress(Bitmap.CompressFormat.PNG, 100, bStream);
             byte[] byteArray = bStream.toByteArray();
-            noteDao.insert(new Note("Title 1","Desc 1",1,byteArray));
-            noteDao.insert(new Note("Title 2","Desc 2",2,byteArray));
-            noteDao.insert(new Note("Title 3","Desc 3",3,null));
+            noteDao.insert(new Note("Title 1","This is a sample note",1,byteArray));
+            noteDao.insert(new Note("Title 2","This is a sample note",2,byteArray));
             return null;
         }
     }

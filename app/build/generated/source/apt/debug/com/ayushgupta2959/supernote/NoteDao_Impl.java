@@ -155,7 +155,7 @@ public final class NoteDao_Impl implements NoteDao {
 
   @Override
   public LiveData<List<Note>> getAllNodes() {
-    final String _sql = "SELECT * FROM note_table ORDER BY priority DESC";
+    final String _sql = "SELECT * FROM note_table ORDER BY priority ASC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     return __db.getInvalidationTracker().createLiveData(new String[]{"note_table"}, new Callable<List<Note>>() {
       @Override
