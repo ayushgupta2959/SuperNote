@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\3dfb2823b4048d29b495d9d64ee95187\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\a0555ad8ecdbb45bbb0da21be9a50a4c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\95da58b7974c59422603aad74f596b1c\AndroidManifest.xml:2:1-14:12
@@ -43,25 +43,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\shiv\.gradle\cac
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\ec815a3eecbdcba6b757880d8376ca05\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\735deddaecc277827af5ad5cda89e128\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\c72778b3a354c4f42b42e539a25db8f2\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:3:5-43
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:5:5-20:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\3dfb2823b4048d29b495d9d64ee95187\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\3dfb2823b4048d29b495d9d64ee95187\AndroidManifest.xml:22:5-20
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\95da58b7974c59422603aad74f596b1c\AndroidManifest.xml:7:5-12:19
@@ -81,39 +81,39 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\shiv\.gradle\c
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\e45d917e9b84528709e0dd195d743cb0\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.ayushgupta2959.supernote.AddEditNoteActivity
-ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:12:9-66
+ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:12:9-66
 	android:name
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:12:19-54
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:12:19-54
 activity#com.ayushgupta2959.supernote.MainActivity
-ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml:17:27-74
 uses-sdk
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\3dfb2823b4048d29b495d9d64ee95187\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\3dfb2823b4048d29b495d9d64ee95187\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\a0555ad8ecdbb45bbb0da21be9a50a4c\AndroidManifest.xml:20:5-44
@@ -192,16 +192,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\shiv\.gradle\caches\transforms
 MERGED from [androidx.print:print:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\735deddaecc277827af5ad5cda89e128\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\c72778b3a354c4f42b42e539a25db8f2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\c72778b3a354c4f42b42e539a25db8f2\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\shiv\Downloads\SuperNote-master-20190730T123856Z-001\SuperNote-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\SuperNote\app\src\main\AndroidManifest.xml
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\shiv\.gradle\caches\transforms-2\files-2.1\95da58b7974c59422603aad74f596b1c\AndroidManifest.xml:8:9-11:40
 	android:authorities
